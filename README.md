@@ -38,6 +38,22 @@ Tugas Magang (Challenge Backend Laravel DOT Indonesia), Membuat Admin Panel Rest
 
 ![github](https://user-images.githubusercontent.com/108115133/183002663-7cffccb7-f4ab-4738-8501-ef8ead0b9e90.PNG)
 
+### Logout
+
+```bash
+  POST /api/logout
+```
+
+![github](https://user-images.githubusercontent.com/108115133/183007753-2bf016bb-269b-460e-8cba-6c87c0c5ddd4.PNG)
+
+### Login
+
+```bash
+  POST /api/login
+```
+
+![github](https://user-images.githubusercontent.com/108115133/183007819-b997c740-890b-44b1-b071-4201b7452143.PNG)
+
 ### With Auth Token can access all Routes
 
 ```bash
@@ -68,19 +84,3 @@ Tugas Magang (Challenge Backend Laravel DOT Indonesia), Membuat Admin Panel Rest
     PUT /api/posts/{id}
     DELETE /api/posts/{id}
 ```
-
-### Logout
-
-```bash
-  POST /api/logout
-```
-
-![github](https://user-images.githubusercontent.com/108115133/183007753-2bf016bb-269b-460e-8cba-6c87c0c5ddd4.PNG)
-
-### Login
-
-```bash
-  POST /api/login
-```
-
-![github](https://user-images.githubusercontent.com/108115133/183007819-b997c740-890b-44b1-b071-4201b7452143.PNG)
