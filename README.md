@@ -72,15 +72,15 @@ Tugas Magang (Challenge Backend Laravel DOT Indonesia), Membuat Admin Panel Rest
 ### Logout
 
 ```bash
-  Post /api/logout
+  POST /api/logout
 ```
 
 ![github](https://user-images.githubusercontent.com/108115133/183007753-2bf016bb-269b-460e-8cba-6c87c0c5ddd4.PNG)
 
-### LOgin
+### Login
 
 ```bash
-  Post /api/login
+  POST /api/login
 ```
 
 ![github](https://user-images.githubusercontent.com/108115133/183007819-b997c740-890b-44b1-b071-4201b7452143.PNG)
