@@ -1,4 +1,4 @@
-# CRUD Table Admin Panel and API Laravel
+# CRUD Table Admin Panel with Sanctum API Laravel
 
 Tugas Magang (Challenge Backend Laravel DOT Indonesia), Membuat Admin Panel Rest API 2 Table menggunakan token auth dengan Laravel Sanctum-API
 
