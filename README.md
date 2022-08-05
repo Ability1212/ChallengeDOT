@@ -34,7 +34,7 @@ Tugas Magang (Challenge Backend Laravel DOT Indonesia), Membuat Admin Panel Rest
 
 ![github](https://user-images.githubusercontent.com/108115133/183002492-7533424a-2d80-40aa-b94d-36db8910ab4b.PNG)
 
-### Set auth Token
+### Set auth Token in Bearer Token
 
 ![github](https://user-images.githubusercontent.com/108115133/183002663-7cffccb7-f4ab-4738-8501-ef8ead0b9e90.PNG)
 
