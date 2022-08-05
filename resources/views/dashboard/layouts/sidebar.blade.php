@@ -1,7 +1,8 @@
 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse mt-3">
     <div class="position-sticky pt-2">
         <ul class="nav flex-column">
-
+        
+        @can('admin)'
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('dashboard/customers*') ? 'active' : '' }}" href="/dashboard/customers">
                     <span data-feather="users"></span>
@@ -14,8 +15,8 @@
                     Orders
                 </a>
             </li>
-
-
+        @endcan
+        
         </ul>
     </div>
 </nav>
