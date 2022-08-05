@@ -29,7 +29,7 @@ Tugas Magang (Challenge Backend Laravel DOT Indonesia), Membuat Admin Panel Rest
 ### Register and get Token auth
 
 ```bash
-  Post /api/register
+  POST /api/register
 ```
 
 ![github](https://user-images.githubusercontent.com/108115133/183002492-7533424a-2d80-40aa-b94d-36db8910ab4b.PNG)
