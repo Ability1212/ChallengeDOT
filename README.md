@@ -1,64 +1,86 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# CRUD Table Admin Panel and API Laravel
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Tugas Magang (Challenge Backend Laravel DOT Indonesia), Membuat Admin Panel Rest API 2 Table menggunakan token auth dengan Laravel Sanctum-API
 
-## About Laravel
+## Screenshot
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Register
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![github](https://user-images.githubusercontent.com/108115133/183000897-d44f019b-964b-4dc2-97c1-aee1823f940a.PNG)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Login
 
-## Learning Laravel
+![github](https://user-images.githubusercontent.com/108115133/183001042-2504b424-ff42-4c51-8269-8f61564e3aa1.PNG)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### List Customers
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![github](https://user-images.githubusercontent.com/108115133/183001130-70230053-4a5d-49c5-9f09-effd79d836a3.PNG)
 
-## Laravel Sponsors
+### List Orders
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![github](https://user-images.githubusercontent.com/108115133/183001209-45f21a6b-77da-43d7-b63d-d098f978e575.PNG)
 
-### Premium Partners
+## Sanctum API with Token Auth
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Set Headers
 
-## Contributing
+![github](https://user-images.githubusercontent.com/108115133/183001517-4781454b-e99f-4732-a88d-e6b168e9c786.PNG)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Register and get Token auth
 
-## Code of Conduct
+```bash
+  Post /api/register
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![github](https://user-images.githubusercontent.com/108115133/183002492-7533424a-2d80-40aa-b94d-36db8910ab4b.PNG)
 
-## Security Vulnerabilities
+### Set auth Token
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![github](https://user-images.githubusercontent.com/108115133/183002663-7cffccb7-f4ab-4738-8501-ef8ead0b9e90.PNG)
 
-## License
+### With Auth Token can access all Routes
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+  # Public Routes
+    POST /api/register
+    POST /api/login
+    
+  - Customers
+    GET /api/customers
+    GET /api/customers/{id}
+    GET /api/customers/search/{name}
+    
+  - Posts
+    GET /api/posts
+    GET /api/posts/{id}
+    GET /api/posts/search/{title}
+    
+  # Protected Routes
+    POST /api/logout
+    
+  - Customers
+    POST /api/customers
+    PUT /api/customers/{id}
+    DELETE /api/customers/{id}
+    
+  - Posts
+    POST /api/posts
+    PUT /api/posts/{id}
+    DELETE /api/posts/{id}
+```
+
+### Logout
+
+```bash
+  Post /api/logout
+```
+
+![github](https://user-images.githubusercontent.com/108115133/183007753-2bf016bb-269b-460e-8cba-6c87c0c5ddd4.PNG)
+
+### LOgin
+
+```bash
+  Post /api/login
+```
+
+![github](https://user-images.githubusercontent.com/108115133/183007819-b997c740-890b-44b1-b071-4201b7452143.PNG)
