@@ -84,3 +84,7 @@ Tugas Magang (Challenge Backend Laravel DOT Indonesia), Membuat Admin Panel Rest
     PUT /api/posts/{id}
     DELETE /api/posts/{id}
 ```
+
+## Desain Database
+
+![github](https://user-images.githubusercontent.com/108115133/183044834-ddcb4964-7db4-4258-83dc-d824fa4abfbf.PNG)
